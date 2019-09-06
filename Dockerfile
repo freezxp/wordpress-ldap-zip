@@ -8,3 +8,6 @@ RUN set -x \
   	&& docker-php-ext-install zip \
   	&& apt-get purge -y --auto-remove libldap2-dev \
 	&& rm -rf /var/lib/apt/lists/*
+	
+RUN touch /usr/local/etc/php/conf.d/uploads.ini \
+    && echo "upload_max_filesize = 20M;" >> /usr/local/etc/php/conf.d/uploads.ini
