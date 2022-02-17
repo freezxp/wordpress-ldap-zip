@@ -12,7 +12,7 @@ RUN set -x \
 	
 RUN touch /usr/local/etc/php/conf.d/uploads.ini \
     	&& echo "file_uploads = On" >> /usr/local/etc/php/conf.d/uploads.ini \
-    	&& echo "memory_limit = 2000M" >> /usr/local/etc/php/conf.d/uploads.ini \
-    	&& echo "upload_max_filesize = 2000M" >> /usr/local/etc/php/conf.d/uploads.ini \
-    	&& echo "post_max_size = 2000M" >> /usr/local/etc/php/conf.d/uploads.ini \
+    	&& echo "memory_limit = 3000M" >> /usr/local/etc/php/conf.d/uploads.ini \
+    	&& echo "upload_max_filesize = 3000M" >> /usr/local/etc/php/conf.d/uploads.ini \
+    	&& echo "post_max_size = 3000M" >> /usr/local/etc/php/conf.d/uploads.ini \
     	&& echo "max_execution_time = 600" >> /usr/local/etc/php/conf.d/uploads.ini
